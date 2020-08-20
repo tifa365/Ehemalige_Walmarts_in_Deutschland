@@ -1,0 +1,2338 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b114734a847945c9869f6b0ce8c6a8e7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_b114734a847945c9869f6b0ce8c6a8e7" ></div>
+        
+</body>
+<script>    
+    
+            var map_b114734a847945c9869f6b0ce8c6a8e7 = L.map(
+                "map_b114734a847945c9869f6b0ce8c6a8e7",
+                {
+                    center: [51.5167, 9.9167],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5.5,
+                    zoomControl: true,
+                    preferCanvas: true,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5090530f16584bcbb3d382d409008898 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var marker_5f3aad146c9d4e43b3ce24f58a2bb010 = L.marker(
+                [50.7786267, 6.1206302],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_1310355a3b584442bb6767fc31043350 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_5f3aad146c9d4e43b3ce24f58a2bb010.setIcon(icon_1310355a3b584442bb6767fc31043350);
+        
+    
+        var popup_80bf5041f448483b86d8b396ac64aa98 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1f1d456bd3584c31bad3af4c893f8a27 = $(`<div id="html_1f1d456bd3584c31bad3af4c893f8a27" style="width: 100.0%; height: 100.0%;">EDEKA Schäfer, 139, Elsassstraße, Viktoriaviertel, Forst, Aachen-Mitte, Aachen, Städteregion Aachen, Nordrhein-Westfalen, 52068, Deutschland</div>`)[0];
+            popup_80bf5041f448483b86d8b396ac64aa98.setContent(html_1f1d456bd3584c31bad3af4c893f8a27);
+        
+
+        marker_5f3aad146c9d4e43b3ce24f58a2bb010.bindPopup(popup_80bf5041f448483b86d8b396ac64aa98)
+        ;
+
+        
+    
+    
+            var marker_506125f6dd7d45969567ef57c09ebfe9 = L.marker(
+                [53.4672179, 7.4845931],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_e597738cc3ba42efa5af436eeebb6cee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_506125f6dd7d45969567ef57c09ebfe9.setIcon(icon_e597738cc3ba42efa5af436eeebb6cee);
+        
+    
+        var popup_3cac041e063247bb886dc93dc48441d8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a24aed00364e4ffb81786c0537ca9d9e = $(`<div id="html_a24aed00364e4ffb81786c0537ca9d9e" style="width: 100.0%; height: 100.0%;">Straßenverkehrsamt, 7-13, Fischteichweg, Kirchdorf, Kernstadt Aurich (ehemalige Stadt Aurich), Aurich, Landkreis Aurich, Niedersachsen, 26603, Deutschland</div>`)[0];
+            popup_3cac041e063247bb886dc93dc48441d8.setContent(html_a24aed00364e4ffb81786c0537ca9d9e);
+        
+
+        marker_506125f6dd7d45969567ef57c09ebfe9.bindPopup(popup_3cac041e063247bb886dc93dc48441d8)
+        ;
+
+        
+    
+    
+            var marker_f34b8083ca1941478119d3ac7e728313 = L.marker(
+                [49.8471594, 7.8770034],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_0ff93220537c452889cfe41888ca8775 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_f34b8083ca1941478119d3ac7e728313.setIcon(icon_0ff93220537c452889cfe41888ca8775);
+        
+    
+        var popup_4add20e355cf41b28c58b86f3f844358 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6b7589c078fe4b39a05394579639e2af = $(`<div id="html_6b7589c078fe4b39a05394579639e2af" style="width: 100.0%; height: 100.0%;">Expert, 3, Schwabenheimer Weg, Winzenheim, Bad Kreuznach, Landkreis Bad Kreuznach, Rheinland-Pfalz, 55543, Deutschland</div>`)[0];
+            popup_4add20e355cf41b28c58b86f3f844358.setContent(html_6b7589c078fe4b39a05394579639e2af);
+        
+
+        marker_f34b8083ca1941478119d3ac7e728313.bindPopup(popup_4add20e355cf41b28c58b86f3f844358)
+        ;
+
+        
+    
+    
+            var marker_76fa62ecaa8442729a5bd1692df9b840 = L.marker(
+                [49.78643135, 7.639582314510847],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_fb141ed160f843d59d7bae414c9e6b38 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_76fa62ecaa8442729a5bd1692df9b840.setIcon(icon_fb141ed160f843d59d7bae414c9e6b38);
+        
+    
+        var popup_2796d94f3a92462b80cc500093a79186 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3a37e581d08143aaa36dd4dcea0fda95 = $(`<div id="html_3a37e581d08143aaa36dd4dcea0fda95" style="width: 100.0%; height: 100.0%;">Real, 3, Westtangente, Neues Leben, Bad Sobernheim, Nahe-Glan, Landkreis Bad Kreuznach, Rheinland-Pfalz, 55566, Deutschland</div>`)[0];
+            popup_2796d94f3a92462b80cc500093a79186.setContent(html_3a37e581d08143aaa36dd4dcea0fda95);
+        
+
+        marker_76fa62ecaa8442729a5bd1692df9b840.bindPopup(popup_2796d94f3a92462b80cc500093a79186)
+        ;
+
+        
+    
+    
+            var marker_bf9fe372504a4429b1dde9bcdad19467 = L.marker(
+                [52.4686658, 13.4432574],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_a47ea5630a1046c989fb45f15f532cc6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_bf9fe372504a4429b1dde9bcdad19467.setIcon(icon_a47ea5630a1046c989fb45f15f532cc6);
+        
+    
+        var popup_afc745e5dc7747afa63d9c4aeed57780 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f8c38f3fb7234a23bd3df58449e183b2 = $(`<div id="html_f8c38f3fb7234a23bd3df58449e183b2" style="width: 100.0%; height: 100.0%;">Real, 231-235, Karl-Marx-Straße, Richardkiez, Neukölln, 12055, Deutschland</div>`)[0];
+            popup_afc745e5dc7747afa63d9c4aeed57780.setContent(html_f8c38f3fb7234a23bd3df58449e183b2);
+        
+
+        marker_bf9fe372504a4429b1dde9bcdad19467.bindPopup(popup_afc745e5dc7747afa63d9c4aeed57780)
+        ;
+
+        
+    
+    
+            var marker_a73f8bf05eea487b8d411904e66777a3 = L.marker(
+                [49.345647, 7.2522277],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_b5b17a296fed43bb810d5b5ddd3a0f76 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_a73f8bf05eea487b8d411904e66777a3.setIcon(icon_b5b17a296fed43bb810d5b5ddd3a0f76);
+        
+    
+        var popup_3410b4869b2245209749a6fa0a34dc40 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3c2c551927db441fb06b8a14267374d5 = $(`<div id="html_3c2c551927db441fb06b8a14267374d5" style="width: 100.0%; height: 100.0%;">Postfiliale, 1, Poststraße, Rothmühle, Bexbach, Saarpfalz-Kreis, Saarland, 66450, Deutschland</div>`)[0];
+            popup_3410b4869b2245209749a6fa0a34dc40.setContent(html_3c2c551927db441fb06b8a14267374d5);
+        
+
+        marker_a73f8bf05eea487b8d411904e66777a3.bindPopup(popup_3410b4869b2245209749a6fa0a34dc40)
+        ;
+
+        
+    
+    
+            var marker_7de397be6a8d4c09a2a03e152afbef00 = L.marker(
+                [51.6122452, 7.6300109],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_276c5383215c4142a29ae3b7d4791d4e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_7de397be6a8d4c09a2a03e152afbef00.setIcon(icon_276c5383215c4142a29ae3b7d4791d4e);
+        
+    
+        var popup_56211aec74ad42e7833d28b63fceaa1d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0d3ef18713f14a2da96b146302c0661d = $(`<div id="html_0d3ef18713f14a2da96b146302c0661d" style="width: 100.0%; height: 100.0%;">Töddinghauser Straße, Weddinghofen, Bergkamen, Kreis Unna, Nordrhein-Westfalen, 59192, Deutschland</div>`)[0];
+            popup_56211aec74ad42e7833d28b63fceaa1d.setContent(html_0d3ef18713f14a2da96b146302c0661d);
+        
+
+        marker_7de397be6a8d4c09a2a03e152afbef00.bindPopup(popup_56211aec74ad42e7833d28b63fceaa1d)
+        ;
+
+        
+    
+    
+            var marker_b54916cf2a944f3285247d215db6e406 = L.marker(
+                [52.28380585, 10.579530905118492],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_de9d6b0cd41141538bf028e03bf2646a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_b54916cf2a944f3285247d215db6e406.setIcon(icon_de9d6b0cd41141538bf028e03bf2646a);
+        
+    
+        var popup_ff78464c0a8a4e70b0e39dff74c136ab = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c8b9f24aa2d84523ba5bff6a5aa430d7 = $(`<div id="html_c8b9f24aa2d84523ba5bff6a5aa430d7" style="width: 100.0%; height: 100.0%;">real,-, 53, Berliner Straße, Gliesmarode, Wabe-Schunter-Beberbach, Braunschweig, Niedersachsen, 38104, Deutschland</div>`)[0];
+            popup_ff78464c0a8a4e70b0e39dff74c136ab.setContent(html_c8b9f24aa2d84523ba5bff6a5aa430d7);
+        
+
+        marker_b54916cf2a944f3285247d215db6e406.bindPopup(popup_ff78464c0a8a4e70b0e39dff74c136ab)
+        ;
+
+        
+    
+    
+            var marker_2630e683ea0844f993b24e3a270d5baa = L.marker(
+                [53.0697022, 8.8895493],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_3b85502e431444bfabd246614fbba21b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_2630e683ea0844f993b24e3a270d5baa.setIcon(icon_3b85502e431444bfabd246614fbba21b);
+        
+    
+        var popup_e50a0a2367524792bde578093cff3321 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_473f515ccf0a4ed48a8e162a456202d2 = $(`<div id="html_473f515ccf0a4ed48a8e162a456202d2" style="width: 100.0%; height: 100.0%;">Real, 197, Vahrer Straße, Sebaldsbrück, Hemelingen, Stadtbezirk Bremen-Ost, Bremen, 28329, Deutschland</div>`)[0];
+            popup_e50a0a2367524792bde578093cff3321.setContent(html_473f515ccf0a4ed48a8e162a456202d2);
+        
+
+        marker_2630e683ea0844f993b24e3a270d5baa.bindPopup(popup_e50a0a2367524792bde578093cff3321)
+        ;
+
+        
+    
+    
+            var marker_8a3c61c24554411c867a4060c7dc5bdf = L.marker(
+                [53.066083899999995, 8.770249054201164],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_ad3683c9e8224cad996a0ad344bcb823 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_8a3c61c24554411c867a4060c7dc5bdf.setIcon(icon_ad3683c9e8224cad996a0ad344bcb823);
+        
+    
+        var popup_ce11b01ffda345b0b2ca0f7376a9fe7e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c884ba572e3e437b8c78ac41d9934933 = $(`<div id="html_c884ba572e3e437b8c78ac41d9934933" style="width: 100.0%; height: 100.0%;">Sparkasse Bremen - SB Filiale, 55, Duckwitzstraße, Gewerbegebiet Ochtum, Neustadt, Stadtbezirk Bremen-Süd, Bremen, 28199, Deutschland</div>`)[0];
+            popup_ce11b01ffda345b0b2ca0f7376a9fe7e.setContent(html_c884ba572e3e437b8c78ac41d9934933);
+        
+
+        marker_8a3c61c24554411c867a4060c7dc5bdf.bindPopup(popup_ce11b01ffda345b0b2ca0f7376a9fe7e)
+        ;
+
+        
+    
+    
+            var marker_6cb96fce2b7244b7a46771f3b73beae0 = L.marker(
+                [49.4103249, 8.5401922],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_a75411dcf75141d0ae888cb10088d246 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_6cb96fce2b7244b7a46771f3b73beae0.setIcon(icon_a75411dcf75141d0ae888cb10088d246);
+        
+    
+        var popup_eaa2d6272fe9481ea20f2cf49a563ce7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_37467f190b6542728b2dd32eb6fc95a9 = $(`<div id="html_37467f190b6542728b2dd32eb6fc95a9" style="width: 100.0%; height: 100.0%;">Real, 2, Mannheimer Landstraße, Rohrhof, Brühl, Rhein-Neckar-Kreis, Baden-Württemberg, 68782, Deutschland</div>`)[0];
+            popup_eaa2d6272fe9481ea20f2cf49a563ce7.setContent(html_37467f190b6542728b2dd32eb6fc95a9);
+        
+
+        marker_6cb96fce2b7244b7a46771f3b73beae0.bindPopup(popup_eaa2d6272fe9481ea20f2cf49a563ce7)
+        ;
+
+        
+    
+    
+            var marker_b767a7197c5e482793d754a9c60683d4 = L.marker(
+                [48.7245854, 8.109026],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_6245ad10c34f4dc9bce73f9d01e07865 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_b767a7197c5e482793d754a9c60683d4.setIcon(icon_6245ad10c34f4dc9bce73f9d01e07865);
+        
+    
+        var popup_0bcf56d9030348059fcd5070a994c45b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2b838d645d5640b184aac835ed1c2724 = $(`<div id="html_2b838d645d5640b184aac835ed1c2724" style="width: 100.0%; height: 100.0%;">Deutsche Post, 75, Vimbucher Straße, Vimbuch, Bühl, Vereinbarte Verwaltungsgemeinschaft Bühl, Landkreis Rastatt, Baden-Württemberg, 77815, Deutschland</div>`)[0];
+            popup_0bcf56d9030348059fcd5070a994c45b.setContent(html_2b838d645d5640b184aac835ed1c2724);
+        
+
+        marker_b767a7197c5e482793d754a9c60683d4.bindPopup(popup_0bcf56d9030348059fcd5070a994c45b)
+        ;
+
+        
+    
+    
+            var marker_1d3388a475f14c2ea2aca9321b5de5cd = L.marker(
+                [52.6519048, 10.0697878],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_9bbe7ab8c7734e6ba839bfe02e9f6af4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_1d3388a475f14c2ea2aca9321b5de5cd.setIcon(icon_9bbe7ab8c7734e6ba839bfe02e9f6af4);
+        
+    
+        var popup_668a7705cdbb4fd89a3246503a9dbcec = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c5ea07d0f25e43079ad63913dc208f76 = $(`<div id="html_c5ea07d0f25e43079ad63913dc208f76" style="width: 100.0%; height: 100.0%;">Famila Nordost, 3-5, Zur Hasselklink, Groß Hehlen, Celle, Landkreis Celle, Niedersachsen, 29229, Deutschland</div>`)[0];
+            popup_668a7705cdbb4fd89a3246503a9dbcec.setContent(html_c5ea07d0f25e43079ad63913dc208f76);
+        
+
+        marker_1d3388a475f14c2ea2aca9321b5de5cd.bindPopup(popup_668a7705cdbb4fd89a3246503a9dbcec)
+        ;
+
+        
+    
+    
+            var marker_6e7b24dab0ff457790dffd6979e0c6fd = L.marker(
+                [51.7702356, 14.3433127],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_83e59383c37b4cb897e6cab43ee8b946 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_6e7b24dab0ff457790dffd6979e0c6fd.setIcon(icon_83e59383c37b4cb897e6cab43ee8b946);
+        
+    
+        var popup_4254272fb23e4498b773c145bf8cb82d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e10e3c5b82f44e1688a4947e68c5bda0 = $(`<div id="html_e10e3c5b82f44e1688a4947e68c5bda0" style="width: 100.0%; height: 100.0%;">1, Gerhart-Hauptmann-Straße, Schmellwitz, Cottbus - Chóśebuz, Brandenburg, 03044, Deutschland</div>`)[0];
+            popup_4254272fb23e4498b773c145bf8cb82d.setContent(html_e10e3c5b82f44e1688a4947e68c5bda0);
+        
+
+        marker_6e7b24dab0ff457790dffd6979e0c6fd.bindPopup(popup_4254272fb23e4498b773c145bf8cb82d)
+        ;
+
+        
+    
+    
+            var marker_95e683392e564ed49165193917fb9ded = L.marker(
+                [49.85697695, 8.633393490733923],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_b4d67306cb964614b9061b6cddece854 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_95e683392e564ed49165193917fb9ded.setIcon(icon_b4d67306cb964614b9061b6cddece854);
+        
+    
+        var popup_2600a2a12d644ef48f61b5bb2cb16527 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d70d528d4e1349628849fd466e6e224f = $(`<div id="html_d70d528d4e1349628849fd466e6e224f" style="width: 100.0%; height: 100.0%;">Real, 44, Eschollbrücker Straße, Postsiedlung, Darmstadt-West, Darmstadt, Hessen, 64295, Deutschland</div>`)[0];
+            popup_2600a2a12d644ef48f61b5bb2cb16527.setContent(html_d70d528d4e1349628849fd466e6e224f);
+        
+
+        marker_95e683392e564ed49165193917fb9ded.bindPopup(popup_2600a2a12d644ef48f61b5bb2cb16527)
+        ;
+
+        
+    
+    
+            var marker_221dff238ca54d82b5a26ee439f87027 = L.marker(
+                [53.0303167, 8.6602519],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_b00dabb54d534318b8c0fc54b6302610 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_221dff238ca54d82b5a26ee439f87027.setIcon(icon_b00dabb54d534318b8c0fc54b6302610);
+        
+    
+        var popup_6ef2f5ddcea7497a8d125d643414aedf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_001345b8dba7454db7ff8d238246f00c = $(`<div id="html_001345b8dba7454db7ff8d238246f00c" style="width: 100.0%; height: 100.0%;">EDEKA Center Schlottmann, 5, Seestraße, Hasport, Stickgras/Annenriede, Delmenhorst, Niedersachsen, 27755, Deutschland</div>`)[0];
+            popup_6ef2f5ddcea7497a8d125d643414aedf.setContent(html_001345b8dba7454db7ff8d238246f00c);
+        
+
+        marker_221dff238ca54d82b5a26ee439f87027.bindPopup(popup_6ef2f5ddcea7497a8d125d643414aedf)
+        ;
+
+        
+    
+    
+            var marker_d3429cb3fcd140efb4cfb358510ef35e = L.marker(
+                [53.03872, 8.6778726],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_ca73969d429643c79f227838e643287a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_d3429cb3fcd140efb4cfb358510ef35e.setIcon(icon_ca73969d429643c79f227838e643287a);
+        
+    
+        var popup_73f4ca1c7fc04373a38547325b52950c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e43326d6745d405ead4afede3c1a4ec7 = $(`<div id="html_e43326d6745d405ead4afede3c1a4ec7" style="width: 100.0%; height: 100.0%;">Kaufland, 2, Reinersweg, Stickgras, Gut Langenwisch, Delmenhorst, Niedersachsen, 27751, Deutschland</div>`)[0];
+            popup_73f4ca1c7fc04373a38547325b52950c.setContent(html_e43326d6745d405ead4afede3c1a4ec7);
+        
+
+        marker_d3429cb3fcd140efb4cfb358510ef35e.bindPopup(popup_73f4ca1c7fc04373a38547325b52950c)
+        ;
+
+        
+    
+    
+            var marker_fe5c7ae7ece24b6fa19dbfad5be6ab7d = L.marker(
+                [47.892108, 8.5530265],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_944bf0ade1894b598ff69e64c0fc4f5e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_fe5c7ae7ece24b6fa19dbfad5be6ab7d.setIcon(icon_944bf0ade1894b598ff69e64c0fc4f5e);
+        
+    
+        var popup_02d2c5e90f6240e3991d9e18b80ab9ab = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f0b4c64d73124ac18ead6e8d5c098895 = $(`<div id="html_f0b4c64d73124ac18ead6e8d5c098895" style="width: 100.0%; height: 100.0%;">Bergstraße, Fürstenberg, Nollenhof, Hüfingen, Verwaltungsverband Donaueschingen, Schwarzwald-Baar-Kreis, Baden-Württemberg, 78183, Deutschland</div>`)[0];
+            popup_02d2c5e90f6240e3991d9e18b80ab9ab.setContent(html_f0b4c64d73124ac18ead6e8d5c098895);
+        
+
+        marker_fe5c7ae7ece24b6fa19dbfad5be6ab7d.bindPopup(popup_02d2c5e90f6240e3991d9e18b80ab9ab)
+        ;
+
+        
+    
+    
+            var marker_3cd261b366fa4954af9609ecc499f6b8 = L.marker(
+                [51.496336400000004, 7.380475989946138],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_07cf84b4bacb4e1b855bd3f8c1802a23 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_3cd261b366fa4954af9609ecc499f6b8.setIcon(icon_07cf84b4bacb4e1b855bd3f8c1802a23);
+        
+    
+        var popup_1cbd3678b3874960819783244c020d9f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_34e31a176c5e4ca4940213c4447f18fb = $(`<div id="html_34e31a176c5e4ca4940213c4447f18fb" style="width: 100.0%; height: 100.0%;">Wulfshofstraße, Oespel, Dortmund, Nordrhein-Westfalen, 44149, Deutschland</div>`)[0];
+            popup_1cbd3678b3874960819783244c020d9f.setContent(html_34e31a176c5e4ca4940213c4447f18fb);
+        
+
+        marker_3cd261b366fa4954af9609ecc499f6b8.bindPopup(popup_1cbd3678b3874960819783244c020d9f)
+        ;
+
+        
+    
+    
+            var marker_326eb3eefbcd470581e49120494296b8 = L.marker(
+                [50.0309833, 8.7031081],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_3acdb1f3a504487f9a2dcd7b54749e35 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_326eb3eefbcd470581e49120494296b8.setIcon(icon_3acdb1f3a504487f9a2dcd7b54749e35);
+        
+    
+        var popup_7e8519c0823e45e1952126f9efdb7f47 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1b24f63f10264994beb938734b15d028 = $(`<div id="html_1b24f63f10264994beb938734b15d028" style="width: 100.0%; height: 100.0%;">15, Robert-Bosch-Straße, Sprendlingen, Dreieich, Landkreis Offenbach, Hessen, 63303, Deutschland</div>`)[0];
+            popup_7e8519c0823e45e1952126f9efdb7f47.setContent(html_1b24f63f10264994beb938734b15d028);
+        
+
+        marker_326eb3eefbcd470581e49120494296b8.bindPopup(popup_7e8519c0823e45e1952126f9efdb7f47)
+        ;
+
+        
+    
+    
+            var marker_916a2c3d8b9e4f648bc9fb73763ba5f3 = L.marker(
+                [51.1697182, 6.861817],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_2177eb61d9b34957be17f5ce5f87d29e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_916a2c3d8b9e4f648bc9fb73763ba5f3.setIcon(icon_2177eb61d9b34957be17f5ce5f87d29e);
+        
+    
+        var popup_be28beb72558477bbc043a22d7f80684 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_286cdc220b0b4046a5c58b9e58fd6c93 = $(`<div id="html_286cdc220b0b4046a5c58b9e58fd6c93" style="width: 100.0%; height: 100.0%;">EDEKA - Zurheide, 40, Nürnberger Straße, Reisholz, Stadtbezirk 9, Düsseldorf, Nordrhein-Westfalen, 40599, Deutschland</div>`)[0];
+            popup_be28beb72558477bbc043a22d7f80684.setContent(html_286cdc220b0b4046a5c58b9e58fd6c93);
+        
+
+        marker_916a2c3d8b9e4f648bc9fb73763ba5f3.bindPopup(popup_be28beb72558477bbc043a22d7f80684)
+        ;
+
+        
+    
+    
+            var marker_9397d31313434e3fb12cee6a412882e2 = L.marker(
+                [48.3984079, 12.7614863],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_16fa2dda96dc4401acf666d423f82c5c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_9397d31313434e3fb12cee6a412882e2.setIcon(icon_16fa2dda96dc4401acf666d423f82c5c);
+        
+    
+        var popup_0921626eb59f4f608bd469cb730b24a1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6e5ab49ae9ba44eab05d4b9ee2fcb728 = $(`<div id="html_6e5ab49ae9ba44eab05d4b9ee2fcb728" style="width: 100.0%; height: 100.0%;">Kaufland Tankstelle, 10, Lindhofstraße, Tiefstadt, Eggenfelden, Landkreis Rottal-Inn, Bayern, 84307, Deutschland</div>`)[0];
+            popup_0921626eb59f4f608bd469cb730b24a1.setContent(html_6e5ab49ae9ba44eab05d4b9ee2fcb728);
+        
+
+        marker_9397d31313434e3fb12cee6a412882e2.bindPopup(popup_0921626eb59f4f608bd469cb730b24a1)
+        ;
+
+        
+    
+    
+            var marker_179737003a9c4263b2dbc1bf58bf7b59 = L.marker(
+                [53.389098, 7.2098951],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_63931af5c1014003b1d83d33fe8cf8de = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_179737003a9c4263b2dbc1bf58bf7b59.setIcon(icon_63931af5c1014003b1d83d33fe8cf8de);
+        
+    
+        var popup_4fd43a9bedce48b8bb2af0f172aaec27 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6636c6779d654629b0408cad66973f39 = $(`<div id="html_6636c6779d654629b0408cad66973f39" style="width: 100.0%; height: 100.0%;">Blume Ideal, 2a, Fritz-Reuter-Straße, Gewerbegebiet Nord (Harsweg), Emden, Niedersachsen, 26721, Deutschland</div>`)[0];
+            popup_4fd43a9bedce48b8bb2af0f172aaec27.setContent(html_6636c6779d654629b0408cad66973f39);
+        
+
+        marker_179737003a9c4263b2dbc1bf58bf7b59.bindPopup(popup_4fd43a9bedce48b8bb2af0f172aaec27)
+        ;
+
+        
+    
+    
+            var marker_945f4ff2853b44f8bc06f3a925c38ba7 = L.marker(
+                [51.0777912, 6.307000886242458],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_7a5387f13a414307b9b601496dd19d3a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_945f4ff2853b44f8bc06f3a925c38ba7.setIcon(icon_7a5387f13a414307b9b601496dd19d3a);
+        
+    
+        var popup_5d61b4a75f044814973cb5e9711d32c5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c12137a40532433886ece631d115d298 = $(`<div id="html_c12137a40532433886ece631d115d298" style="width: 100.0%; height: 100.0%;">4, Antwerpener Straße, Oerather Mühlenfeld, Erkelenz, Kreis Heinsberg, Nordrhein-Westfalen, 41812, Deutschland</div>`)[0];
+            popup_5d61b4a75f044814973cb5e9711d32c5.setContent(html_c12137a40532433886ece631d115d298);
+        
+
+        marker_945f4ff2853b44f8bc06f3a925c38ba7.bindPopup(popup_5d61b4a75f044814973cb5e9711d32c5)
+        ;
+
+        
+    
+    
+            var marker_2d78449243a3462b94fdba2d989e221a = L.marker(
+                [51.4580635, 7.0175395],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_4ea48e715e6b4beba91ec3c285f99902 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_2d78449243a3462b94fdba2d989e221a.setIcon(icon_4ea48e715e6b4beba91ec3c285f99902);
+        
+    
+        var popup_0dd0c1c739ab41d195579229f4dcd070 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9fc5050f0fbe4afb89bd2e145507efec = $(`<div id="html_9fc5050f0fbe4afb89bd2e145507efec" style="width: 100.0%; height: 100.0%;">Porscheplatz, Ostviertel, Stadtbezirk I, Essen, Nordrhein-Westfalen, 45127, Deutschland</div>`)[0];
+            popup_0dd0c1c739ab41d195579229f4dcd070.setContent(html_9fc5050f0fbe4afb89bd2e145507efec);
+        
+
+        marker_2d78449243a3462b94fdba2d989e221a.bindPopup(popup_0dd0c1c739ab41d195579229f4dcd070)
+        ;
+
+        
+    
+    
+            var marker_50feba90c2644cd7a9e720556c45e45d = L.marker(
+                [48.9460096, 8.4094093],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_e890d31c57c54f268e63c8175ad0e948 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_50feba90c2644cd7a9e720556c45e45d.setIcon(icon_e890d31c57c54f268e63c8175ad0e948);
+        
+    
+        var popup_a79719ccbcd24226a84dad1cb4f199eb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9333cc48b44e43fbb2002401eedbc846 = $(`<div id="html_9333cc48b44e43fbb2002401eedbc846" style="width: 100.0%; height: 100.0%;">Huttenkreuzstraße, Ettlingen, Landkreis Karlsruhe, Baden-Württemberg, 76275, Deutschland</div>`)[0];
+            popup_a79719ccbcd24226a84dad1cb4f199eb.setContent(html_9333cc48b44e43fbb2002401eedbc846);
+        
+
+        marker_50feba90c2644cd7a9e720556c45e45d.bindPopup(popup_a79719ccbcd24226a84dad1cb4f199eb)
+        ;
+
+        
+    
+    
+            var marker_6dfd7ed3c38442a8a95b77b74bc974e1 = L.marker(
+                [48.031058900000005, 7.861510356083047],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_ae542a9b8032464d8cc736cefaffc4b1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_6dfd7ed3c38442a8a95b77b74bc974e1.setIcon(icon_ae542a9b8032464d8cc736cefaffc4b1);
+        
+    
+        var popup_5544a6b4eb094ca4b716c7982be98198 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_40033f39e43d42baa4599b3c2648f01a = $(`<div id="html_40033f39e43d42baa4599b3c2648f01a" style="width: 100.0%; height: 100.0%;">Real, 4, Gundelfinger Straße, Industriegebiet Nord, Zähringen, Freiburg im Breisgau, Baden-Württemberg, 79108, Deutschland</div>`)[0];
+            popup_5544a6b4eb094ca4b716c7982be98198.setContent(html_40033f39e43d42baa4599b3c2648f01a);
+        
+
+        marker_6dfd7ed3c38442a8a95b77b74bc974e1.bindPopup(popup_5544a6b4eb094ca4b716c7982be98198)
+        ;
+
+        
+    
+    
+            var marker_b637e034992f434cac783d0a2f3bc5e6 = L.marker(
+                [48.3876231, 11.7314579],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_c8244c1abe08450d8a13b891a4d1317f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_b637e034992f434cac783d0a2f3bc5e6.setIcon(icon_c8244c1abe08450d8a13b891a4d1317f);
+        
+    
+        var popup_4231e96918f04a198067b0a376cabbc9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1b89e00fbca5474c88f49985a508120d = $(`<div id="html_1b89e00fbca5474c88f49985a508120d" style="width: 100.0%; height: 100.0%;">real, 2, Gutenbergstraße, Freising Süd, Freising, Landkreis Freising, Bayern, 85354, Deutschland</div>`)[0];
+            popup_4231e96918f04a198067b0a376cabbc9.setContent(html_1b89e00fbca5474c88f49985a508120d);
+        
+
+        marker_b637e034992f434cac783d0a2f3bc5e6.bindPopup(popup_4231e96918f04a198067b0a376cabbc9)
+        ;
+
+        
+    
+    
+            var marker_f0f5af9e5e73480ea73680c95e86f9ea = L.marker(
+                [51.5512914, 7.086851626356866],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_27339dcdfb79457aa07a8a602ce4ccda = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_f0f5af9e5e73480ea73680c95e86f9ea.setIcon(icon_27339dcdfb79457aa07a8a602ce4ccda);
+        
+    
+        var popup_4929149290e9485da9be48a39b30ac4a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_917ddfcf159d4de29aacf19fb1ada095 = $(`<div id="html_917ddfcf159d4de29aacf19fb1ada095" style="width: 100.0%; height: 100.0%;">Marktkauf, 10, Ulrichstraße, Gewerbegebiet Emscherstraße-Ost, Erle, Gelsenkirchen-Ost, Buer, Nordrhein-Westfalen, 45891, Deutschland</div>`)[0];
+            popup_4929149290e9485da9be48a39b30ac4a.setContent(html_917ddfcf159d4de29aacf19fb1ada095);
+        
+
+        marker_f0f5af9e5e73480ea73680c95e86f9ea.bindPopup(popup_4929149290e9485da9be48a39b30ac4a)
+        ;
+
+        
+    
+    
+            var marker_02ac1c3e4f1644acbd1ac5b283942ef7 = L.marker(
+                [50.5802279, 8.645762],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_b1640edbfde240e2a4ce0f58b35a3ca7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_02ac1c3e4f1644acbd1ac5b283942ef7.setIcon(icon_b1640edbfde240e2a4ce0f58b35a3ca7);
+        
+    
+        var popup_bd5a31fc7b4641d4bb5e57ab2ce94ac2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9361983b1bc24fceb4adc8b149ac7250 = $(`<div id="html_9361983b1bc24fceb4adc8b149ac7250" style="width: 100.0%; height: 100.0%;">Real, 27, Gottlieb-Daimler-Straße, Industriegebiet West, Kleinlinden, Gießen, Landkreis Gießen, Hessen, 35398, Deutschland</div>`)[0];
+            popup_bd5a31fc7b4641d4bb5e57ab2ce94ac2.setContent(html_9361983b1bc24fceb4adc8b149ac7250);
+        
+
+        marker_02ac1c3e4f1644acbd1ac5b283942ef7.bindPopup(popup_bd5a31fc7b4641d4bb5e57ab2ce94ac2)
+        ;
+
+        
+    
+    
+            var marker_60ea7f21fa47466783e75cd65cca673f = L.marker(
+                [49.9221178, 8.47574605554195],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_d0d714733bc8441c9f93cfd9e70bbcb0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_60ea7f21fa47466783e75cd65cca673f.setIcon(icon_d0d714733bc8441c9f93cfd9e70bbcb0);
+        
+    
+        var popup_cd5fd5ea1b8c4638b0e6994dfa27006a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e1fd0f55c87d4c14b27019c0a695ec06 = $(`<div id="html_e1fd0f55c87d4c14b27019c0a695ec06" style="width: 100.0%; height: 100.0%;">50, Mainzer Straße, Auf Esch, Groß-Gerau, Kreis Groß-Gerau, Hessen, 64521, Deutschland</div>`)[0];
+            popup_cd5fd5ea1b8c4638b0e6994dfa27006a.setContent(html_e1fd0f55c87d4c14b27019c0a695ec06);
+        
+
+        marker_60ea7f21fa47466783e75cd65cca673f.bindPopup(popup_cd5fd5ea1b8c4638b0e6994dfa27006a)
+        ;
+
+        
+    
+    
+            var marker_da5e6c49ea244f7a959a65d1bd5d69a5 = L.marker(
+                [49.8803424, 8.8102198],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_6eac65ed67554823a22ee078090a5cbc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_da5e6c49ea244f7a959a65d1bd5d69a5.setIcon(icon_6eac65ed67554823a22ee078090a5cbc);
+        
+    
+        var popup_04974be86677433d98c022ad27bd5577 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ac6293334ff54adf9757106432d7a52e = $(`<div id="html_ac6293334ff54adf9757106432d7a52e" style="width: 100.0%; height: 100.0%;">Röntgenstraße, Gewerbegebiet an der B26, Ortsmitte, Groß-Zimmern, Landkreis Darmstadt-Dieburg, Hessen, 64846, Deutschland</div>`)[0];
+            popup_04974be86677433d98c022ad27bd5577.setContent(html_ac6293334ff54adf9757106432d7a52e);
+        
+
+        marker_da5e6c49ea244f7a959a65d1bd5d69a5.bindPopup(popup_04974be86677433d98c022ad27bd5577)
+        ;
+
+        
+    
+    
+            var marker_33b3f215f39a4603a74330e5c094b834 = L.marker(
+                [51.377992649999996, 7.4621808628419455],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_8c49c0c933004bea905d358ebbd4d5fc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_33b3f215f39a4603a74330e5c094b834.setIcon(icon_8c49c0c933004bea905d358ebbd4d5fc);
+        
+    
+        var popup_26df62a1094148be91636e9c75097cca = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c3e84244291741b781ee214a5375aa9c = $(`<div id="html_c3e84244291741b781ee214a5375aa9c" style="width: 100.0%; height: 100.0%;">Kaufland, 51, Freiligrathstraße, Boelerheide, Boele, Hagen-Nord, Hagen, Nordrhein-Westfalen, 58099, Deutschland</div>`)[0];
+            popup_26df62a1094148be91636e9c75097cca.setContent(html_c3e84244291741b781ee214a5375aa9c);
+        
+
+        marker_33b3f215f39a4603a74330e5c094b834.bindPopup(popup_26df62a1094148be91636e9c75097cca)
+        ;
+
+        
+    
+    
+            var marker_8049522dd7f241e99ad4323454f9481f = L.marker(
+                [53.5528293, 10.0194408],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_8306647a2d964ef584fe6de291666c0c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_8049522dd7f241e99ad4323454f9481f.setIcon(icon_8306647a2d964ef584fe6de291666c0c);
+        
+    
+        var popup_7867f9d71c624144aa218d528a3c8643 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ed9425b30e5e47d2a9cee08d4ce4361f = $(`<div id="html_ed9425b30e5e47d2a9cee08d4ce4361f" style="width: 100.0%; height: 100.0%;">Beim Strohhause, St. Georg, Hamburg-Mitte, Hamburg, 20097, Deutschland</div>`)[0];
+            popup_7867f9d71c624144aa218d528a3c8643.setContent(html_ed9425b30e5e47d2a9cee08d4ce4361f);
+        
+
+        marker_8049522dd7f241e99ad4323454f9481f.bindPopup(popup_7867f9d71c624144aa218d528a3c8643)
+        ;
+
+        
+    
+    
+            var marker_ba8ce1e14bf942709995f9c2beae474f = L.marker(
+                [53.5492369, 10.1621256],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_12a6787711eb4cca869cd6a31ed0b8d3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_ba8ce1e14bf942709995f9c2beae474f.setIcon(icon_12a6787711eb4cca869cd6a31ed0b8d3);
+        
+    
+        var popup_772ee31a0b8d43de964f242d459f3702 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d4f75a6626c34967bd5277ecbd698fc0 = $(`<div id="html_d4f75a6626c34967bd5277ecbd698fc0" style="width: 100.0%; height: 100.0%;">Nurgida, 12, Willinghusener Weg, Domhorst, Oststeinbek, Stormarn, Schleswig-Holstein, 22113, Deutschland</div>`)[0];
+            popup_772ee31a0b8d43de964f242d459f3702.setContent(html_d4f75a6626c34967bd5277ecbd698fc0);
+        
+
+        marker_ba8ce1e14bf942709995f9c2beae474f.bindPopup(popup_772ee31a0b8d43de964f242d459f3702)
+        ;
+
+        
+    
+    
+            var marker_a7867b6fb1104ebd808607e0231035e1 = L.marker(
+                [53.556361949999996, 9.966196165419408],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_9af3da0be28e4e679415768e53350c67 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_a7867b6fb1104ebd808607e0231035e1.setIcon(icon_9af3da0be28e4e679415768e53350c67);
+        
+    
+        var popup_6d6cc952d9da45089f364061b340543b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0394c653daa54f48a3f973327b34778c = $(`<div id="html_0394c653daa54f48a3f973327b34778c" style="width: 100.0%; height: 100.0%;">Rindermarkthalle, 31, Neuer Kamp, Karolinenviertel, St. Pauli, Hamburg, 20359, Deutschland</div>`)[0];
+            popup_6d6cc952d9da45089f364061b340543b.setContent(html_0394c653daa54f48a3f973327b34778c);
+        
+
+        marker_a7867b6fb1104ebd808607e0231035e1.bindPopup(popup_6d6cc952d9da45089f364061b340543b)
+        ;
+
+        
+    
+    
+            var marker_2698d8a1a55b44168595f9cf9756490d = L.marker(
+                [52.2998458, 10.171074749999999],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_b0ebedccb7e1442a971b4b31cd561571 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_2698d8a1a55b44168595f9cf9756490d.setIcon(icon_b0ebedccb7e1442a971b4b31cd561571);
+        
+    
+        var popup_bf27f38deac44a2c86dc8ee4175d80e0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4dcb112476b9412db8a1c497d1112d92 = $(`<div id="html_4dcb112476b9412db8a1c497d1112d92" style="width: 100.0%; height: 100.0%;">41, Hildesheimer Straße, Hofschwicheldt, Peine, Landkreis Peine, Niedersachsen, 31226, Deutschland</div>`)[0];
+            popup_bf27f38deac44a2c86dc8ee4175d80e0.setContent(html_4dcb112476b9412db8a1c497d1112d92);
+        
+
+        marker_2698d8a1a55b44168595f9cf9756490d.bindPopup(popup_bf27f38deac44a2c86dc8ee4175d80e0)
+        ;
+
+        
+    
+    
+            var marker_fe262c2488a1431cb66e4d9b16c519a3 = L.marker(
+                [50.9778702, 13.8551241],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_2e5d6533311645878e07e3374774c00a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_fe262c2488a1431cb66e4d9b16c519a3.setIcon(icon_2e5d6533311645878e07e3374774c00a);
+        
+    
+        var popup_dbb6f6fd96c64836abcb22abf9f8d57d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ba4fb6534d3d4e85a761b0f0759172bc = $(`<div id="html_ba4fb6534d3d4e85a761b0f0759172bc" style="width: 100.0%; height: 100.0%;">Sparkasse, 3, Hauptstraße, Gommern, Heidenau, Sächsische Schweiz-Osterzgebirge, Sachsen, 01809, Deutschland</div>`)[0];
+            popup_dbb6f6fd96c64836abcb22abf9f8d57d.setContent(html_ba4fb6534d3d4e85a761b0f0759172bc);
+        
+
+        marker_fe262c2488a1431cb66e4d9b16c519a3.bindPopup(popup_dbb6f6fd96c64836abcb22abf9f8d57d)
+        ;
+
+        
+    
+    
+            var marker_509290ef854e4e6a9688393696e0a96c = L.marker(
+                [49.3268474, 7.339468],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_78d1dc9e0ae94e67a0b8fba7f74ceb3a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_509290ef854e4e6a9688393696e0a96c.setIcon(icon_78d1dc9e0ae94e67a0b8fba7f74ceb3a);
+        
+    
+        var popup_3338a627ba364878894c2ac274a88cfe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6e11419916ed4107b1f8574363e96ade = $(`<div id="html_6e11419916ed4107b1f8574363e96ade" style="width: 100.0%; height: 100.0%;">Robert-Bosch-Straße, Homburg, Saarpfalz-Kreis, Saarland, 66424, Deutschland</div>`)[0];
+            popup_3338a627ba364878894c2ac274a88cfe.setContent(html_6e11419916ed4107b1f8574363e96ade);
+        
+
+        marker_509290ef854e4e6a9688393696e0a96c.bindPopup(popup_3338a627ba364878894c2ac274a88cfe)
+        ;
+
+        
+    
+    
+            var marker_abbb0ec8c9944caa89c44bed20cfd2ed = L.marker(
+                [49.9814619, 8.029151179062701],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_276a27b3f415477fb526e9d5d6cd8f5d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_abbb0ec8c9944caa89c44bed20cfd2ed.setIcon(icon_276a27b3f415477fb526e9d5d6cd8f5d);
+        
+    
+        var popup_80acc4922ce849be81c59d63f65f4d6b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b059bdc4a8d24eef8f9b33c9c71909c8 = $(`<div id="html_b059bdc4a8d24eef8f9b33c9c71909c8" style="width: 100.0%; height: 100.0%;">Real, 3, Nahering, Nieder-Ingelheim, Ingelheim am Rhein, Landkreis Mainz-Bingen, Rheinland-Pfalz, 55218, Deutschland</div>`)[0];
+            popup_80acc4922ce849be81c59d63f65f4d6b.setContent(html_b059bdc4a8d24eef8f9b33c9c71909c8);
+        
+
+        marker_abbb0ec8c9944caa89c44bed20cfd2ed.bindPopup(popup_80acc4922ce849be81c59d63f65f4d6b)
+        ;
+
+        
+    
+    
+            var marker_5a3d56486e9c4d04aa754d57842838c1 = L.marker(
+                [50.9344793, 11.59343],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_3c7773df95d04391a72e12262e3c4054 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_5a3d56486e9c4d04aa754d57842838c1.setIcon(icon_3c7773df95d04391a72e12262e3c4054);
+        
+    
+        var popup_985151145c5e4a5cb6c443fb7c1368d1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7dd437236b6042b498a81d85f6580dc0 = $(`<div id="html_7dd437236b6042b498a81d85f6580dc0" style="width: 100.0%; height: 100.0%;">Löbstedter Straße, Jena-Zentrum, Jena, Thüringen, 07749, Deutschland</div>`)[0];
+            popup_985151145c5e4a5cb6c443fb7c1368d1.setContent(html_7dd437236b6042b498a81d85f6580dc0);
+        
+
+        marker_5a3d56486e9c4d04aa754d57842838c1.bindPopup(popup_985151145c5e4a5cb6c443fb7c1368d1)
+        ;
+
+        
+    
+    
+            var marker_2c2d76ee2b224a689162cea3320941ef = L.marker(
+                [49.0042343, 8.4486072],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_df22c0e5dd054dcd8c81223637795b8e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_2c2d76ee2b224a689162cea3320941ef.setIcon(icon_df22c0e5dd054dcd8c81223637795b8e);
+        
+    
+        var popup_04912985b4344cb3a6cf1b29e0ec74d1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_88e09edd37b9441485a472a4cc403b6a = $(`<div id="html_88e09edd37b9441485a472a4cc403b6a" style="width: 100.0%; height: 100.0%;">Deutsche Post, 111, Durlacher Allee, Alt-Rintheim, Rintheim, Karlsruhe, Baden-Württemberg, 76137, Deutschland</div>`)[0];
+            popup_04912985b4344cb3a6cf1b29e0ec74d1.setContent(html_88e09edd37b9441485a472a4cc403b6a);
+        
+
+        marker_2c2d76ee2b224a689162cea3320941ef.bindPopup(popup_04912985b4344cb3a6cf1b29e0ec74d1)
+        ;
+
+        
+    
+    
+            var marker_87d8acb5abbe4c07a71a1237b3cff472 = L.marker(
+                [48.9913766, 8.375943],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_21146e34a5754206a70e5a53dceb5963 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_87d8acb5abbe4c07a71a1237b3cff472.setIcon(icon_21146e34a5754206a70e5a53dceb5963);
+        
+    
+        var popup_c0e6da96121748fba7fb352df2313e86 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a26f1c5519ce4903abf15699991b627b = $(`<div id="html_a26f1c5519ce4903abf15699991b627b" style="width: 100.0%; height: 100.0%;">Real, 8, Ortenbergstraße, Bulach, Beiertheim-Bulach, Karlsruhe, Baden-Württemberg, 76135, Deutschland</div>`)[0];
+            popup_c0e6da96121748fba7fb352df2313e86.setContent(html_a26f1c5519ce4903abf15699991b627b);
+        
+
+        marker_87d8acb5abbe4c07a71a1237b3cff472.bindPopup(popup_c0e6da96121748fba7fb352df2313e86)
+        ;
+
+        
+    
+    
+            var marker_8e8a3b1a44554c60b93112c95f7af37b = L.marker(
+                [49.8038381, 6.716382051085553],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_066fe8e5b6ae451e9bd35687405cc354 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_8e8a3b1a44554c60b93112c95f7af37b.setIcon(icon_066fe8e5b6ae451e9bd35687405cc354);
+        
+    
+        var popup_76609e7c8ae843d994c3c25dc7371d28 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_78b59dbf1a9d41a882862684349b7bc8 = $(`<div id="html_78b59dbf1a9d41a882862684349b7bc8" style="width: 100.0%; height: 100.0%;">Mosel-Einkaufs-Zentrum, 1, Am Kenner Haus, Kenner Ley, Kenn, Schweich an der Römischen Weinstraße, Landkreis Trier-Saarburg, Rheinland-Pfalz, 54344, Deutschland</div>`)[0];
+            popup_76609e7c8ae843d994c3c25dc7371d28.setContent(html_78b59dbf1a9d41a882862684349b7bc8);
+        
+
+        marker_8e8a3b1a44554c60b93112c95f7af37b.bindPopup(popup_76609e7c8ae843d994c3c25dc7371d28)
+        ;
+
+        
+    
+    
+            var marker_946ec18cabd94fc1a0a95d94c22cf479 = L.marker(
+                [50.9022713, 7.07479965],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_707d800bf94f4e0e89cf2c677f5d30ae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_946ec18cabd94fc1a0a95d94c22cf479.setIcon(icon_707d800bf94f4e0e89cf2c677f5d30ae);
+        
+    
+        var popup_48e74bedb2eb40a2bb9d99f2df70a3c4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3b162a90f8534e16bc14fcfdccd4eea2 = $(`<div id="html_3b162a90f8534e16bc14fcfdccd4eea2" style="width: 100.0%; height: 100.0%;">JET, 32-36, Rudolf-Diesel-Straße, Eil, Porz, Köln, Nordrhein-Westfalen, 51149, Deutschland</div>`)[0];
+            popup_48e74bedb2eb40a2bb9d99f2df70a3c4.setContent(html_3b162a90f8534e16bc14fcfdccd4eea2);
+        
+
+        marker_946ec18cabd94fc1a0a95d94c22cf479.bindPopup(popup_48e74bedb2eb40a2bb9d99f2df70a3c4)
+        ;
+
+        
+    
+    
+            var marker_ca92d883bc4e4ffa95b5bf41804a2a39 = L.marker(
+                [49.2023803, 8.125313644849786],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_641206f233ae48969ba502491a78c6d3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_ca92d883bc4e4ffa95b5bf41804a2a39.setIcon(icon_641206f233ae48969ba502491a78c6d3);
+        
+    
+        var popup_07b8c127c591458facb39bf314de72e3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bca97fe493174dd8932164c982809e43 = $(`<div id="html_bca97fe493174dd8932164c982809e43" style="width: 100.0%; height: 100.0%;">Grill Haus Roma, 11, Dammühlstraße, Kernstadt, Landau in der Pfalz, Rheinland-Pfalz, 76829, Deutschland</div>`)[0];
+            popup_07b8c127c591458facb39bf314de72e3.setContent(html_bca97fe493174dd8932164c982809e43);
+        
+
+        marker_ca92d883bc4e4ffa95b5bf41804a2a39.bindPopup(popup_07b8c127c591458facb39bf314de72e3)
+        ;
+
+        
+    
+    
+            var marker_f6df0fa9fdc24ecaaf07e6ccb3a38f3a = L.marker(
+                [52.4395333, 9.738353082485233],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_45aee897853949169bb8ede39ac5cb2a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_f6df0fa9fdc24ecaaf07e6ccb3a38f3a.setIcon(icon_45aee897853949169bb8ede39ac5cb2a);
+        
+    
+        var popup_a37b719df173471c99c321e645ccc4a9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_27fb42f57bf94543bfe11eba1baa0f98 = $(`<div id="html_27fb42f57bf94543bfe11eba1baa0f98" style="width: 100.0%; height: 100.0%;">Hikari, 7, Marktplatz, Langenforth, Langenhagen (Kernstadt), Langenhagen, Region Hannover, Niedersachsen, 30853, Deutschland</div>`)[0];
+            popup_a37b719df173471c99c321e645ccc4a9.setContent(html_27fb42f57bf94543bfe11eba1baa0f98);
+        
+
+        marker_f6df0fa9fdc24ecaaf07e6ccb3a38f3a.bindPopup(popup_a37b719df173471c99c321e645ccc4a9)
+        ;
+
+        
+    
+    
+            var marker_09a8a3a9339c45d1884de6ee21a15e3d = L.marker(
+                [51.303975, 12.1506459],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_7fb967543f90430f914195772830a5da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_09a8a3a9339c45d1884de6ee21a15e3d.setIcon(icon_7fb967543f90430f914195772830a5da);
+        
+    
+        var popup_28673e2f5e874acfa63b2a1f3c8c1202 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8fe029263a0c468495f0d08eb64439a7 = $(`<div id="html_8fe029263a0c468495f0d08eb64439a7" style="width: 100.0%; height: 100.0%;">Merseburger Straße, Kötzschau, Leuna, Saalekreis, Sachsen-Anhalt, 06237, Deutschland</div>`)[0];
+            popup_28673e2f5e874acfa63b2a1f3c8c1202.setContent(html_8fe029263a0c468495f0d08eb64439a7);
+        
+
+        marker_09a8a3a9339c45d1884de6ee21a15e3d.bindPopup(popup_28673e2f5e874acfa63b2a1f3c8c1202)
+        ;
+
+        
+    
+    
+            var marker_dbf6f6724ee14e37955e75d451f1d74b = L.marker(
+                [51.0276887, 7.014818610531038],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_0702f578c4464b7d8a1d8bd68f02bf1d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_dbf6f6724ee14e37955e75d451f1d74b.setIcon(icon_0702f578c4464b7d8a1d8bd68f02bf1d);
+        
+    
+        var popup_b1329ade40514e8781feb2475ad51061 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fdbbf68c074147d5bb2bb02c45110096 = $(`<div id="html_fdbbf68c074147d5bb2bb02c45110096" style="width: 100.0%; height: 100.0%;">Real, 123, Stixchesstraße, Manfort, Stadtbezirk I, Leverkusen, Nordrhein-Westfalen, 51377, Deutschland</div>`)[0];
+            popup_b1329ade40514e8781feb2475ad51061.setContent(html_fdbbf68c074147d5bb2bb02c45110096);
+        
+
+        marker_dbf6f6724ee14e37955e75d451f1d74b.bindPopup(popup_b1329ade40514e8781feb2475ad51061)
+        ;
+
+        
+    
+    
+            var marker_19183552cb1a45538ef87cc90df7c2c2 = L.marker(
+                [49.4906665, 8.3874226],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_eaf65494a03945638b84549068bf8427 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_19183552cb1a45538ef87cc90df7c2c2.setIcon(icon_eaf65494a03945638b84549068bf8427);
+        
+    
+        var popup_7b2c55c12597445982232d749d7372d8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8630de011282444ba71f9cf09f475379 = $(`<div id="html_8630de011282444ba71f9cf09f475379" style="width: 100.0%; height: 100.0%;">Prälat-Caire-Straße, Oggersheim, Ludwigshafen-Oggersheim, Ludwigshafen am Rhein, Rheinland-Pfalz, 67071, Deutschland</div>`)[0];
+            popup_7b2c55c12597445982232d749d7372d8.setContent(html_8630de011282444ba71f9cf09f475379);
+        
+
+        marker_19183552cb1a45538ef87cc90df7c2c2.bindPopup(popup_7b2c55c12597445982232d749d7372d8)
+        ;
+
+        
+    
+    
+            var marker_769fbafbcdf64912915d61070d65b04e = L.marker(
+                [50.130878800000005, 8.850920888752917],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_b1e0905431dc4259baa6ef26d9da2152 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_769fbafbcdf64912915d61070d65b04e.setIcon(icon_b1e0905431dc4259baa6ef26d9da2152);
+        
+    
+        var popup_e963a9c47a8842089708b0e23a17aba3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bc399be819ea487ea0d180332fe5abda = $(`<div id="html_bc399be819ea487ea0d180332fe5abda" style="width: 100.0%; height: 100.0%;">Real,-, 39-43, Wingertstraße, Dörnigheim, Maintal, Main-Kinzig-Kreis, Hessen, 63477, Deutschland</div>`)[0];
+            popup_e963a9c47a8842089708b0e23a17aba3.setContent(html_bc399be819ea487ea0d180332fe5abda);
+        
+
+        marker_769fbafbcdf64912915d61070d65b04e.bindPopup(popup_e963a9c47a8842089708b0e23a17aba3)
+        ;
+
+        
+    
+    
+            var marker_75a5afc1a39f4229bca5f6e44cd2da76 = L.marker(
+                [50.0268005, 8.2293092],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_755899b5722040778d454a004671d8ba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_75a5afc1a39f4229bca5f6e44cd2da76.setIcon(icon_755899b5722040778d454a004671d8ba);
+        
+    
+        var popup_a78a3028f294438aa2945c6811662b89 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3492c1dfabbb4ffb8a19a0f37da68d3a = $(`<div id="html_3492c1dfabbb4ffb8a19a0f37da68d3a" style="width: 100.0%; height: 100.0%;">Kaufland, 120, Rheinallee, Mombach, Mainz, Rheinland-Pfalz, 55120, Deutschland</div>`)[0];
+            popup_a78a3028f294438aa2945c6811662b89.setContent(html_3492c1dfabbb4ffb8a19a0f37da68d3a);
+        
+
+        marker_75a5afc1a39f4229bca5f6e44cd2da76.bindPopup(popup_a78a3028f294438aa2945c6811662b89)
+        ;
+
+        
+    
+    
+            var marker_9ba468f33370464da995f09ec79fd9f7 = L.marker(
+                [49.9756171, 8.2881466],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_21acb6f2849e4562b73ab971a061b4db = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_9ba468f33370464da995f09ec79fd9f7.setIcon(icon_21acb6f2849e4562b73ab971a061b4db);
+        
+    
+        var popup_9ed1054efa6e4aeb8038eed99ba68dee = L.popup({"maxWidth": "100%"});
+
+        
+            var html_93d82994f6104c25b89c4a013a4a7d15 = $(`<div id="html_93d82994f6104c25b89c4a013a4a7d15" style="width: 100.0%; height: 100.0%;">Edeka, 15, Weberstraße, Weisenau, Mainz, Rheinland-Pfalz, 55130, Deutschland</div>`)[0];
+            popup_9ed1054efa6e4aeb8038eed99ba68dee.setContent(html_93d82994f6104c25b89c4a013a4a7d15);
+        
+
+        marker_9ba468f33370464da995f09ec79fd9f7.bindPopup(popup_9ed1054efa6e4aeb8038eed99ba68dee)
+        ;
+
+        
+    
+    
+            var marker_2c3fc16030fd402d8d15be0eecaa8a96 = L.marker(
+                [49.5188906, 8.5563367],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_4166bb4acb9c4efe947296d9c460b282 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_2c3fc16030fd402d8d15be0eecaa8a96.setIcon(icon_4166bb4acb9c4efe947296d9c460b282);
+        
+    
+        var popup_3c4724db15f8450583bdea8b3dbf3eb0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bf43660f3b04431ababe99f179ba76f3 = $(`<div id="html_bf43660f3b04431ababe99f179ba76f3" style="width: 100.0%; height: 100.0%;">Adler, 38-40, Spreewaldallee, Vogelstang, Mannheim, Baden-Württemberg, 68309, Deutschland</div>`)[0];
+            popup_3c4724db15f8450583bdea8b3dbf3eb0.setContent(html_bf43660f3b04431ababe99f179ba76f3);
+        
+
+        marker_2c3fc16030fd402d8d15be0eecaa8a96.bindPopup(popup_3c4724db15f8450583bdea8b3dbf3eb0)
+        ;
+
+        
+    
+    
+            var marker_7fb257a64f7b4b739a0b4fab6e821685 = L.marker(
+                [48.0040437, 10.1668488],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_33f436d6d26b4f14b59e70a20f7e608a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_7fb257a64f7b4b739a0b4fab6e821685.setIcon(icon_33f436d6d26b4f14b59e70a20f7e608a);
+        
+    
+        var popup_92ff77a774c04499988695ebc852e211 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9d96f76af770482aa467e866dd60f44a = $(`<div id="html_9d96f76af770482aa467e866dd60f44a" style="width: 100.0%; height: 100.0%;">real, 8, Fraunhoferstraße, Industriegebiet-Nord, Amendingen, Memmingen, Bayern, 87700, Deutschland</div>`)[0];
+            popup_92ff77a774c04499988695ebc852e211.setContent(html_9d96f76af770482aa467e866dd60f44a);
+        
+
+        marker_7fb257a64f7b4b739a0b4fab6e821685.bindPopup(popup_92ff77a774c04499988695ebc852e211)
+        ;
+
+        
+    
+    
+            var marker_e9ef8d4245e042e78b280be8f374e2cc = L.marker(
+                [48.2366424, 12.5415695],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_0aacaec7f63c43c681f362f3f7a1bdfa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_e9ef8d4245e042e78b280be8f374e2cc.setIcon(icon_0aacaec7f63c43c681f362f3f7a1bdfa);
+        
+    
+        var popup_cf75c88f2d1d4032bf0c795525f64801 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8afe277063c74997bc7315fc4abd964e = $(`<div id="html_8afe277063c74997bc7315fc4abd964e" style="width: 100.0%; height: 100.0%;">Elbestraße, Lohmühlsiedlung, Lohmühle, Mühldorf a. Inn, Landkreis Mühldorf am Inn, Bayern, 84453, Deutschland</div>`)[0];
+            popup_cf75c88f2d1d4032bf0c795525f64801.setContent(html_8afe277063c74997bc7315fc4abd964e);
+        
+
+        marker_e9ef8d4245e042e78b280be8f374e2cc.bindPopup(popup_cf75c88f2d1d4032bf0c795525f64801)
+        ;
+
+        
+    
+    
+            var marker_15eedcf0c2884811b28f95a44eacf9dd = L.marker(
+                [48.1916649, 11.5883324],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_28547da1d5ae4d8e8da78b15ba268100 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_15eedcf0c2884811b28f95a44eacf9dd.setIcon(icon_28547da1d5ae4d8e8da78b15ba268100);
+        
+    
+        var popup_96ce41be58734b12b6381e5e9f682dff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_82de776188594623b9a26736b3f1343d = $(`<div id="html_82de776188594623b9a26736b3f1343d" style="width: 100.0%; height: 100.0%;">V-Markt, 6, Maria-Probst-Straße, Euro-Industriepark, Bezirksteil Freimann, Schwabing-Freimann, München, Bayern, 80939, Deutschland</div>`)[0];
+            popup_96ce41be58734b12b6381e5e9f682dff.setContent(html_82de776188594623b9a26736b3f1343d);
+        
+
+        marker_15eedcf0c2884811b28f95a44eacf9dd.bindPopup(popup_96ce41be58734b12b6381e5e9f682dff)
+        ;
+
+        
+    
+    
+            var marker_43c45584dbda4da59a6f5e8604fad52b = L.marker(
+                [48.0973739, 11.512688351083948],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_883dd2c0ebd54937818d6da1e2369176 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_43c45584dbda4da59a6f5e8604fad52b.setIcon(icon_883dd2c0ebd54937818d6da1e2369176);
+        
+    
+        var popup_4bccf612756941a98ea97b563ca40744 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a1b9f4378e114c29971b72869921375e = $(`<div id="html_a1b9f4378e114c29971b72869921375e" style="width: 100.0%; height: 100.0%;">4, Machtlfinger Straße, Bezirksteil Obersendling, Thalkirchen-Obersendling-Forstenried-Fürstenried-Solln, München, Bayern, 81379, Deutschland</div>`)[0];
+            popup_4bccf612756941a98ea97b563ca40744.setContent(html_a1b9f4378e114c29971b72869921375e);
+        
+
+        marker_43c45584dbda4da59a6f5e8604fad52b.bindPopup(popup_4bccf612756941a98ea97b563ca40744)
+        ;
+
+        
+    
+    
+            var marker_3037d493ea684f8f86c8d81aa861c64a = L.marker(
+                [49.3295375, 7.1835725270057305],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_11d061e249a0460b80ad5f95d7001817 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_3037d493ea684f8f86c8d81aa861c64a.setIcon(icon_11d061e249a0460b80ad5f95d7001817);
+        
+    
+        var popup_8e543e0929e5489d9959af3f1d836543 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a486f7bd161a441b88273c7b349769ab = $(`<div id="html_a486f7bd161a441b88273c7b349769ab" style="width: 100.0%; height: 100.0%;">Kaufland, 50, Kirkeler Straße, Hofgut Menschenhaus, Neunkirchen, Landkreis Neunkirchen, Saarland, 66538, Deutschland</div>`)[0];
+            popup_8e543e0929e5489d9959af3f1d836543.setContent(html_a486f7bd161a441b88273c7b349769ab);
+        
+
+        marker_3037d493ea684f8f86c8d81aa861c64a.bindPopup(popup_8e543e0929e5489d9959af3f1d836543)
+        ;
+
+        
+    
+    
+            var marker_c77bc380fbec47ba90ca4b3462dd788f = L.marker(
+                [53.5968297, 7.2123966],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_22cea6e7fad54463a9e9ad36b61c8db7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_c77bc380fbec47ba90ca4b3462dd788f.setIcon(icon_22cea6e7fad54463a9e9ad36b61c8db7);
+        
+    
+        var popup_5431bd2861d14cc19f411372cb5c715e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cb8fd73237104e58b37083c4cf017a6e = $(`<div id="html_cb8fd73237104e58b37083c4cf017a6e" style="width: 100.0%; height: 100.0%;">Real, 1-3, Glückauf, Ekel, Norden (City), Norden, Landkreis Aurich, Niedersachsen, 26506, Deutschland</div>`)[0];
+            popup_5431bd2861d14cc19f411372cb5c715e.setContent(html_cb8fd73237104e58b37083c4cf017a6e);
+        
+
+        marker_c77bc380fbec47ba90ca4b3462dd788f.bindPopup(popup_5431bd2861d14cc19f411372cb5c715e)
+        ;
+
+        
+    
+    
+            var marker_8748a88073e64a8ebc833963cf1918c3 = L.marker(
+                [53.501543, 8.4783876],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_339b78392ac54974a4299c8d3284f2bc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_8748a88073e64a8ebc833963cf1918c3.setIcon(icon_339b78392ac54974a4299c8d3284f2bc);
+        
+    
+        var popup_219a59b1835c4573ad2ffcf43cd2e783 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3dda3e1e12124967aaf06d1965f35ab9 = $(`<div id="html_3dda3e1e12124967aaf06d1965f35ab9" style="width: 100.0%; height: 100.0%;">Atenser Allee, Blexersande, Atens, Nordenham, Landkreis Wesermarsch, Niedersachsen, 26954, Deutschland</div>`)[0];
+            popup_219a59b1835c4573ad2ffcf43cd2e783.setContent(html_3dda3e1e12124967aaf06d1965f35ab9);
+        
+
+        marker_8748a88073e64a8ebc833963cf1918c3.bindPopup(popup_219a59b1835c4573ad2ffcf43cd2e783)
+        ;
+
+        
+    
+    
+            var marker_7425a3d83cc44e07a397a8c5a817183b = L.marker(
+                [52.2647642, 9.7703871],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_810f9cb137244a329f28202f08914b13 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_7425a3d83cc44e07a397a8c5a817183b.setIcon(icon_810f9cb137244a329f28202f08914b13);
+        
+    
+        var popup_2a57b1b7b803402eab66b8568c55d129 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_612f8bffad9448e283c5426991d8a4c7 = $(`<div id="html_612f8bffad9448e283c5426991d8a4c7" style="width: 100.0%; height: 100.0%;">Rewe, 2, Johann-Koch-Straße, Pattensen, Region Hannover, Niedersachsen, 30982, Deutschland</div>`)[0];
+            popup_2a57b1b7b803402eab66b8568c55d129.setContent(html_612f8bffad9448e283c5426991d8a4c7);
+        
+
+        marker_7425a3d83cc44e07a397a8c5a817183b.bindPopup(popup_2a57b1b7b803402eab66b8568c55d129)
+        ;
+
+        
+    
+    
+            var marker_034ff4de7d9e4f07bcb93df22b3150bb = L.marker(
+                [49.8139136, 8.6189514],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_1be710dfe03845949302f60358924f12 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_034ff4de7d9e4f07bcb93df22b3150bb.setIcon(icon_1be710dfe03845949302f60358924f12);
+        
+    
+        var popup_5b9cd9ae34fc4edfb5ac6b724593bc90 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fcb1d54be05049968f3f69300c2d502c = $(`<div id="html_fcb1d54be05049968f3f69300c2d502c" style="width: 100.0%; height: 100.0%;">Kaufland, 200, Eberstädter Straße, Pfungstadt, Landkreis Darmstadt-Dieburg, Hessen, 64319, Deutschland</div>`)[0];
+            popup_5b9cd9ae34fc4edfb5ac6b724593bc90.setContent(html_fcb1d54be05049968f3f69300c2d502c);
+        
+
+        marker_034ff4de7d9e4f07bcb93df22b3150bb.bindPopup(popup_5b9cd9ae34fc4edfb5ac6b724593bc90)
+        ;
+
+        
+    
+    
+            var marker_5189a894f611482484bb15b9483db4b1 = L.marker(
+                [53.1878185, 8.6993427],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_08ee969fa04040cd903018fef91ae307 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_5189a894f611482484bb15b9483db4b1.setIcon(icon_08ee969fa04040cd903018fef91ae307);
+        
+    
+        var popup_6da88bf839474d0c91ace1e271f5c9fc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b59d0e1213774cc59f8f24ec18bb275e = $(`<div id="html_b59d0e1213774cc59f8f24ec18bb275e" style="width: 100.0%; height: 100.0%;">Heidkamp, Auf den Äckern, Stubben, Ritterhude, Landkreis Osterholz, Niedersachsen, 27721, Deutschland</div>`)[0];
+            popup_6da88bf839474d0c91ace1e271f5c9fc.setContent(html_b59d0e1213774cc59f8f24ec18bb275e);
+        
+
+        marker_5189a894f611482484bb15b9483db4b1.bindPopup(popup_6da88bf839474d0c91ace1e271f5c9fc)
+        ;
+
+        
+    
+    
+            var marker_b6f3a634752f4c25ba00a88fb443b519 = L.marker(
+                [51.3748352, 11.599040738423788],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_5cb93f9456f040f3840d3978a9e1fded = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_b6f3a634752f4c25ba00a88fb443b519.setIcon(icon_5cb93f9456f040f3840d3978a9e1fded);
+        
+    
+        var popup_bbeb8b7c807e432592f5fdcd2f4db149 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bde1d3d07c874f6397bd165a5a34e0e9 = $(`<div id="html_bde1d3d07c874f6397bd165a5a34e0e9" style="width: 100.0%; height: 100.0%;">Nebraer Tor, Niederschmon, Querfurt, Saalekreis, Sachsen-Anhalt, 06268, Deutschland</div>`)[0];
+            popup_bbeb8b7c807e432592f5fdcd2f4db149.setContent(html_bde1d3d07c874f6397bd165a5a34e0e9);
+        
+
+        marker_b6f3a634752f4c25ba00a88fb443b519.bindPopup(popup_bbeb8b7c807e432592f5fdcd2f4db149)
+        ;
+
+        
+    
+    
+            var marker_fa7b5d25f7cd4f3c94a21bd7baedda6a = L.marker(
+                [51.296623350000004, 6.831402170510316],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_8ad487e615d749248613828d085e49d0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_fa7b5d25f7cd4f3c94a21bd7baedda6a.setIcon(icon_8ad487e615d749248613828d085e49d0);
+        
+    
+        var popup_6d48cee2da2b4677a05710594514e400 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7b7ef3e0918b4755b2cdcb5186fe317c = $(`<div id="html_7b7ef3e0918b4755b2cdcb5186fe317c" style="width: 100.0%; height: 100.0%;">Real, 30, Am Sandbach, West, Ratingen, Kreis Mettmann, Nordrhein-Westfalen, 40878, Deutschland</div>`)[0];
+            popup_6d48cee2da2b4677a05710594514e400.setContent(html_7b7ef3e0918b4755b2cdcb5186fe317c);
+        
+
+        marker_fa7b5d25f7cd4f3c94a21bd7baedda6a.bindPopup(popup_6d48cee2da2b4677a05710594514e400)
+        ;
+
+        
+    
+    
+            var marker_667e9239d6324a6487f9af3de1eaddb6 = L.marker(
+                [50.00866125, 8.433678151865166],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_9768a9aa622c44d19ce9c52d9aecc92b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_667e9239d6324a6487f9af3de1eaddb6.setIcon(icon_9768a9aa622c44d19ce9c52d9aecc92b);
+        
+    
+        var popup_1d4928215614476f95225748cff38bab = L.popup({"maxWidth": "100%"});
+
+        
+            var html_352be529f982469f8297681f35a15149 = $(`<div id="html_352be529f982469f8297681f35a15149" style="width: 100.0%; height: 100.0%;">Edeka, 2, Flörsheimer Straße, Raunheim, Kreis Groß-Gerau, Hessen, 65479, Deutschland</div>`)[0];
+            popup_1d4928215614476f95225748cff38bab.setContent(html_352be529f982469f8297681f35a15149);
+        
+
+        marker_667e9239d6324a6487f9af3de1eaddb6.bindPopup(popup_1d4928215614476f95225748cff38bab)
+        ;
+
+        
+    
+    
+            var marker_28143f3133294155ad25d8bfa654160f = L.marker(
+                [48.4956154, 9.1579653],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_8a4c486b4ef04366b6f18b1a3e4d2c9f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_28143f3133294155ad25d8bfa654160f.setIcon(icon_8a4c486b4ef04366b6f18b1a3e4d2c9f);
+        
+    
+        var popup_177a3252cc3a4789946c1110487f2d16 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1ddb18348b824a0b90cc8f8d3f548c60 = $(`<div id="html_1ddb18348b824a0b90cc8f8d3f548c60" style="width: 100.0%; height: 100.0%;">Justus-von-Liebig-Straße, Industriegebiet Mark West, Betzingen, Reutlingen-Betzingen, Reutlingen, Landkreis Reutlingen, Baden-Württemberg, 72770, Deutschland</div>`)[0];
+            popup_177a3252cc3a4789946c1110487f2d16.setContent(html_1ddb18348b824a0b90cc8f8d3f548c60);
+        
+
+        marker_28143f3133294155ad25d8bfa654160f.bindPopup(popup_177a3252cc3a4789946c1110487f2d16)
+        ;
+
+        
+    
+    
+            var marker_d902a54189f54c9da00177979a003a3a = L.marker(
+                [49.131765, 8.1324106],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_1d699def34544ee68497220266114d61 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_d902a54189f54c9da00177979a003a3a.setIcon(icon_1d699def34544ee68497220266114d61);
+        
+    
+        var popup_9b28a5dae25c44c5983528846bfe4d40 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eb883212dc0a45cd87e4fc6b21468a19 = $(`<div id="html_eb883212dc0a45cd87e4fc6b21468a19" style="width: 100.0%; height: 100.0%;">Deutsche Post, 93, Hauptstraße, Rohrbach, Herxheim, Landkreis Südliche Weinstraße, Rheinland-Pfalz, 76865, Deutschland</div>`)[0];
+            popup_9b28a5dae25c44c5983528846bfe4d40.setContent(html_eb883212dc0a45cd87e4fc6b21468a19);
+        
+
+        marker_d902a54189f54c9da00177979a003a3a.bindPopup(popup_9b28a5dae25c44c5983528846bfe4d40)
+        ;
+
+        
+    
+    
+            var marker_4d01073da878430d86525afc6bc2758c = L.marker(
+                [47.83908125, 12.119967805862068],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_6bda9bea3eb44fcf886731caefafd5ba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_4d01073da878430d86525afc6bc2758c.setIcon(icon_6bda9bea3eb44fcf886731caefafd5ba);
+        
+    
+        var popup_47a218b428b240ed8c7e2683b293bfd7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_24b2d0d287be47049d9fa31bfa0d0900 = $(`<div id="html_24b2d0d287be47049d9fa31bfa0d0900" style="width: 100.0%; height: 100.0%;">Allguth, 124, Kufsteiner Straße, Heilig Blut, Rosenheim, Bayern, 83026, Deutschland</div>`)[0];
+            popup_47a218b428b240ed8c7e2683b293bfd7.setContent(html_24b2d0d287be47049d9fa31bfa0d0900);
+        
+
+        marker_4d01073da878430d86525afc6bc2758c.bindPopup(popup_47a218b428b240ed8c7e2683b293bfd7)
+        ;
+
+        
+    
+    
+            var marker_0e4cb8d487664e629111ac0462b54853 = L.marker(
+                [52.0552536, 10.3851207],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_b1fcd59a4fa045fcac348cb3ada1165f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_0e4cb8d487664e629111ac0462b54853.setIcon(icon_b1fcd59a4fa045fcac348cb3ada1165f);
+        
+    
+        var popup_f349e48ae31e47f690687e27901af4c3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_db14f79619eb4033af257597db3669e0 = $(`<div id="html_db14f79619eb4033af257597db3669e0" style="width: 100.0%; height: 100.0%;">Porschestraße, Gewerbegebiet Porschestraße, Bad, Ortschaft Süd, Salzgitter, Niedersachsen, 38259, Deutschland</div>`)[0];
+            popup_f349e48ae31e47f690687e27901af4c3.setContent(html_db14f79619eb4033af257597db3669e0);
+        
+
+        marker_0e4cb8d487664e629111ac0462b54853.bindPopup(popup_f349e48ae31e47f690687e27901af4c3)
+        ;
+
+        
+    
+    
+            var marker_f088e516eb8f4fe19b88aa0d2d0bd066 = L.marker(
+                [52.1534235, 10.344976718572557],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_cc81400220204213830dc71136e7b004 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_f088e516eb8f4fe19b88aa0d2d0bd066.setIcon(icon_cc81400220204213830dc71136e7b004);
+        
+    
+        var popup_041987b91f064d3dae23d02d9e049b15 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c340506e1d5e4413917ed36ecff78ced = $(`<div id="html_c340506e1d5e4413917ed36ecff78ced" style="width: 100.0%; height: 100.0%;">Real, 111, Konrad-Adenauer-Straße, Lebenstedt, Ortschaft Nord, Salzgitter, Niedersachsen, 38226, Deutschland</div>`)[0];
+            popup_041987b91f064d3dae23d02d9e049b15.setContent(html_c340506e1d5e4413917ed36ecff78ced);
+        
+
+        marker_f088e516eb8f4fe19b88aa0d2d0bd066.bindPopup(popup_041987b91f064d3dae23d02d9e049b15)
+        ;
+
+        
+    
+    
+            var marker_e93cb646746e4470a1ced3ee94206b6c = L.marker(
+                [53.5990546, 11.4423995],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_98aa770700b94d29bacb7d4f1207ddd4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_e93cb646746e4470a1ced3ee94206b6c.setIcon(icon_98aa770700b94d29bacb7d4f1207ddd4);
+        
+    
+        var popup_c274fcff48bd42539e5f487470eb3e98 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_984e7eab77de4db7bf4cc2075ba01768 = $(`<div id="html_984e7eab77de4db7bf4cc2075ba01768" style="width: 100.0%; height: 100.0%;">Hamburger Allee, Neue Gartenstadt, Neu Zippendorf, Schwerin, Mecklenburg-Vorpommern, 19063, Deutschland</div>`)[0];
+            popup_c274fcff48bd42539e5f487470eb3e98.setContent(html_984e7eab77de4db7bf4cc2075ba01768);
+        
+
+        marker_e93cb646746e4470a1ced3ee94206b6c.bindPopup(popup_c274fcff48bd42539e5f487470eb3e98)
+        ;
+
+        
+    
+    
+            var marker_04429ab442e04c419e68acab2cbd5d36 = L.marker(
+                [48.0814857, 9.234049090984723],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_b2f64b7550ec4034b107caca7978fabd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_04429ab442e04c419e68acab2cbd5d36.setIcon(icon_b2f64b7550ec4034b107caca7978fabd);
+        
+    
+        var popup_f33f907ab3a54697aa6275b75ee10ec6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a9624436b7b548b4a9869b64ae83e634 = $(`<div id="html_a9624436b7b548b4a9869b64ae83e634" style="width: 100.0%; height: 100.0%;">E-Center, 3, Friedrich-List-Straße, Gewerbegebiet Schönenberg II, Josefslust, Sigmaringen, Gemeindeverwaltungsverband Sigmaringen, Landkreis Sigmaringen, Baden-Württemberg, 72488, Deutschland</div>`)[0];
+            popup_f33f907ab3a54697aa6275b75ee10ec6.setContent(html_a9624436b7b548b4a9869b64ae83e634);
+        
+
+        marker_04429ab442e04c419e68acab2cbd5d36.bindPopup(popup_f33f907ab3a54697aa6275b75ee10ec6)
+        ;
+
+        
+    
+    
+            var marker_d606a8e7e0084c5c8affabc94f75eb88 = L.marker(
+                [50.85733810000001, 8.009985372899393],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_34503d2c094d4df5a52bc7e219f4a53d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_d606a8e7e0084c5c8affabc94f75eb88.setIcon(icon_34503d2c094d4df5a52bc7e219f4a53d);
+        
+    
+        var popup_79df7e77b38d41bbaee2b8e57d40ee01 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_867fd2b9ebac434d82d60e3f7e162352 = $(`<div id="html_867fd2b9ebac434d82d60e3f7e162352" style="width: 100.0%; height: 100.0%;">Real, 170, Eiserfelder Straße, Siegen, Kreis Siegen-Wittgenstein, Nordrhein-Westfalen, 57072, Deutschland</div>`)[0];
+            popup_79df7e77b38d41bbaee2b8e57d40ee01.setContent(html_867fd2b9ebac434d82d60e3f7e162352);
+        
+
+        marker_d606a8e7e0084c5c8affabc94f75eb88.bindPopup(popup_79df7e77b38d41bbaee2b8e57d40ee01)
+        ;
+
+        
+    
+    
+            var marker_d7d31a65d98a4055ada7ebf94a10416f = L.marker(
+                [47.753033099999996, 8.845732177965324],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_97ecac692b6f497788d9f8695ff88011 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_d7d31a65d98a4055ada7ebf94a10416f.setIcon(icon_97ecac692b6f497788d9f8695ff88011);
+        
+    
+        var popup_7d24097f1b2445a49731dd8fd8c4c011 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f495f5b2a120439192b0e6889d3fd8b4 = $(`<div id="html_f495f5b2a120439192b0e6889d3fd8b4" style="width: 100.0%; height: 100.0%;">Real, 15, Georg-Fischer-Straße, Südstadt, Singen (Hohentwiel), Verwaltungsgemeinschaft Singen (Hohentwiel), Landkreis Konstanz, Baden-Württemberg, 78224, Deutschland</div>`)[0];
+            popup_7d24097f1b2445a49731dd8fd8c4c011.setContent(html_f495f5b2a120439192b0e6889d3fd8b4);
+        
+
+        marker_d7d31a65d98a4055ada7ebf94a10416f.bindPopup(popup_7d24097f1b2445a49731dd8fd8c4c011)
+        ;
+
+        
+    
+    
+            var marker_e7081f78100c4926bde59af409b51830 = L.marker(
+                [51.1535184, 7.0233913],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_44e736aae352431a8248973f6a6acb08 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_e7081f78100c4926bde59af409b51830.setIcon(icon_44e736aae352431a8248973f6a6acb08);
+        
+    
+        var popup_dc46d2c0721c42a8a476b05c98dab5c2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6ffbad7dc0304d65b3b542019c677afd = $(`<div id="html_6ffbad7dc0304d65b3b542019c677afd" style="width: 100.0%; height: 100.0%;">64, Friedenstraße, Neu-Löhdorf, Ohligs/Aufderhöhe/Merscheid, Solingen, Nordrhein-Westfalen, 42699, Deutschland</div>`)[0];
+            popup_dc46d2c0721c42a8a476b05c98dab5c2.setContent(html_6ffbad7dc0304d65b3b542019c677afd);
+        
+
+        marker_e7081f78100c4926bde59af409b51830.bindPopup(popup_dc46d2c0721c42a8a476b05c98dab5c2)
+        ;
+
+        
+    
+    
+            var marker_5eec68e0effa4efd9e625bb612b8e011 = L.marker(
+                [47.843191899999994, 11.150079176114136],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_e7bc515af55e43839a1e1db7dfb569ef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_5eec68e0effa4efd9e625bb612b8e011.setIcon(icon_e7bc515af55e43839a1e1db7dfb569ef);
+        
+    
+        var popup_c8d0e1c697f24e32a5e04baaa1cce079 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5a35ca9d81104efa800f520c9ed8eb2e = $(`<div id="html_5a35ca9d81104efa800f520c9ed8eb2e" style="width: 100.0%; height: 100.0%;">Real, 28, Kaltenmoserstraße, Dietlhofen, Weilheim in Oberbayern, Landkreis Weilheim-Schongau, Bayern, 82362, Deutschland</div>`)[0];
+            popup_c8d0e1c697f24e32a5e04baaa1cce079.setContent(html_5a35ca9d81104efa800f520c9ed8eb2e);
+        
+
+        marker_5eec68e0effa4efd9e625bb612b8e011.bindPopup(popup_c8d0e1c697f24e32a5e04baaa1cce079)
+        ;
+
+        
+    
+    
+            var marker_5de4fc12e8dd49b793a65bff73059550 = L.marker(
+                [47.799548, 9.6287845],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_c6243656098745bc8845bb3fb200c8a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_5de4fc12e8dd49b793a65bff73059550.setIcon(icon_c6243656098745bc8845bb3fb200c8a5);
+        
+    
+        var popup_1687a95d7ad1461c96c70b74c46fdbc4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5e2d4a675166419f85fd04c9f84c91cd = $(`<div id="html_5e2d4a675166419f85fd04c9f84c91cd" style="width: 100.0%; height: 100.0%;">Franz-Beer-Straße, Weingarten, Verwaltungsverband Mittleres Schussental, Landkreis Ravensburg, Baden-Württemberg, 88250, Deutschland</div>`)[0];
+            popup_1687a95d7ad1461c96c70b74c46fdbc4.setContent(html_5e2d4a675166419f85fd04c9f84c91cd);
+        
+
+        marker_5de4fc12e8dd49b793a65bff73059550.bindPopup(popup_1687a95d7ad1461c96c70b74c46fdbc4)
+        ;
+
+        
+    
+    
+            var marker_00e49923891c4d21bad9dfc504ecad41 = L.marker(
+                [50.5366965, 8.5367174],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_87c1fe3af79e41899f37721fb25cd24e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_00e49923891c4d21bad9dfc504ecad41.setIcon(icon_87c1fe3af79e41899f37721fb25cd24e);
+        
+    
+        var popup_e2d83381b9914c0fa42d2684f589ab16 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_877df310228f45cb83ea729fa626aa7c = $(`<div id="html_877df310228f45cb83ea729fa626aa7c" style="width: 100.0%; height: 100.0%;">Hörnsheimer Eck, Büblingshausen, Wetzlar, Lahn-Dill-Kreis, Hessen, 35578, Deutschland</div>`)[0];
+            popup_e2d83381b9914c0fa42d2684f589ab16.setContent(html_877df310228f45cb83ea729fa626aa7c);
+        
+
+        marker_00e49923891c4d21bad9dfc504ecad41.bindPopup(popup_e2d83381b9914c0fa42d2684f589ab16)
+        ;
+
+        
+    
+    
+            var marker_26d32ac9bca24070a03d97abe44b2f17 = L.marker(
+                [50.046423000000004, 8.217637096480559],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_23bd4592481548868df68ee328f42b69 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_26d32ac9bca24070a03d97abe44b2f17.setIcon(icon_23bd4592481548868df68ee328f42b69);
+        
+    
+        var popup_d8c6a05576c24b74b304470d86d99330 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_41591a1f8e5b42c0925211dc8e206aa3 = $(`<div id="html_41591a1f8e5b42c0925211dc8e206aa3" style="width: 100.0%; height: 100.0%;">XXXL Mann Mobilia, 69, Äppelallee, Siedlung Rosenfeld, Biebrich, Wiesbaden, Hessen, 65203, Deutschland</div>`)[0];
+            popup_d8c6a05576c24b74b304470d86d99330.setContent(html_41591a1f8e5b42c0925211dc8e206aa3);
+        
+
+        marker_26d32ac9bca24070a03d97abe44b2f17.bindPopup(popup_d8c6a05576c24b74b304470d86d99330)
+        ;
+
+        
+    
+    
+            var marker_2d48f43a7a6f4b44acf71fabce4b9ba4 = L.marker(
+                [50.065874, 8.2523603],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_e168647f1f554b2b93eaab03bfe91da1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_2d48f43a7a6f4b44acf71fabce4b9ba4.setIcon(icon_e168647f1f554b2b93eaab03bfe91da1);
+        
+    
+        var popup_9aa2e8f421684e44b11ad7404d7c302a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_19d54ab921dc43a7bcab4f63c7bfa0b1 = $(`<div id="html_19d54ab921dc43a7bcab4f63c7bfa0b1" style="width: 100.0%; height: 100.0%;">Real, 110, Mainzer Straße, Südost, Wiesbaden, Hessen, 65189, Deutschland</div>`)[0];
+            popup_9aa2e8f421684e44b11ad7404d7c302a.setContent(html_19d54ab921dc43a7bcab4f63c7bfa0b1);
+        
+
+        marker_2d48f43a7a6f4b44acf71fabce4b9ba4.bindPopup(popup_9aa2e8f421684e44b11ad7404d7c302a)
+        ;
+
+        
+    
+    
+            var marker_c1bdebf4043b402abca8532378cc62ac = L.marker(
+                [53.5289395, 8.091976427588264],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_abc82942ae53446293157d5f1978bdaf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_c1bdebf4043b402abca8532378cc62ac.setIcon(icon_abc82942ae53446293157d5f1978bdaf);
+        
+    
+        var popup_7a0eeae81c2e4f7caf21bf652a8d0aff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eef6ca3e9d1844e4a11ac1bca6380e4e = $(`<div id="html_eef6ca3e9d1844e4a11ac1bca6380e4e" style="width: 100.0%; height: 100.0%;">Combi, 2, Friedrich-Paffrath-Straße, Neuende, Wilhelmshaven, Niedersachsen, 26389, Deutschland</div>`)[0];
+            popup_7a0eeae81c2e4f7caf21bf652a8d0aff.setContent(html_eef6ca3e9d1844e4a11ac1bca6380e4e);
+        
+
+        marker_c1bdebf4043b402abca8532378cc62ac.bindPopup(popup_7a0eeae81c2e4f7caf21bf652a8d0aff)
+        ;
+
+        
+    
+    
+            var marker_13bb588c597649c18e6de744c349c120 = L.marker(
+                [53.8915188, 11.530608],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_a20249a249524df383a410a7f7b79743 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_13bb588c597649c18e6de744c349c120.setIcon(icon_a20249a249524df383a410a7f7b79743);
+        
+    
+        var popup_6aaede14e62644b495e3224a47e34292 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4bc674cc84c645389fc1b702c28f11e0 = $(`<div id="html_4bc674cc84c645389fc1b702c28f11e0" style="width: 100.0%; height: 100.0%;">3, Karpendiek, Kritzow, Hornstorf, Neuburg, Nordwestmecklenburg, Mecklenburg-Vorpommern, 23970, Deutschland</div>`)[0];
+            popup_6aaede14e62644b495e3224a47e34292.setContent(html_4bc674cc84c645389fc1b702c28f11e0);
+        
+
+        marker_13bb588c597649c18e6de744c349c120.bindPopup(popup_6aaede14e62644b495e3224a47e34292)
+        ;
+
+        
+    
+    
+            var marker_6cd9131ca9f54be3b4636f501957dcd5 = L.marker(
+                [51.446710800000005, 7.369746916178022],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_7211f4fddbd64b7da9199493d7c0666c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_6cd9131ca9f54be3b4636f501957dcd5.setIcon(icon_7211f4fddbd64b7da9199493d7c0666c);
+        
+    
+        var popup_d4586c1c289e4e93a88aae597f65c4a5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_324f693be83d44f0a57c4e8d2480bb70 = $(`<div id="html_324f693be83d44f0a57c4e8d2480bb70" style="width: 100.0%; height: 100.0%;">real Witten-Annen, 133, Annenstraße, Wullen, Annen, Witten, Ennepe-Ruhr-Kreis, Nordrhein-Westfalen, 58453, Deutschland</div>`)[0];
+            popup_d4586c1c289e4e93a88aae597f65c4a5.setContent(html_324f693be83d44f0a57c4e8d2480bb70);
+        
+
+        marker_6cd9131ca9f54be3b4636f501957dcd5.bindPopup(popup_d4586c1c289e4e93a88aae597f65c4a5)
+        ;
+
+        
+    
+    
+            var marker_06eb26f3fb194603a6ac357927fc1aa9 = L.marker(
+                [52.150278150000005, 10.542923848585339],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_d76926f0f282439398c5a7c73c4c1673 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_06eb26f3fb194603a6ac357927fc1aa9.setIcon(icon_d76926f0f282439398c5a7c73c4c1673);
+        
+    
+        var popup_e6ca039b11e549fc8055dd1cf9a26ec2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8086cc7bffc548d687605125420b2c7f = $(`<div id="html_8086cc7bffc548d687605125420b2c7f" style="width: 100.0%; height: 100.0%;">real,-, 3, Am Wasserwerk, Weiße Schanze, Wolfenbüttel, Landkreis Wolfenbüttel, Niedersachsen, 38304, Deutschland</div>`)[0];
+            popup_e6ca039b11e549fc8055dd1cf9a26ec2.setContent(html_8086cc7bffc548d687605125420b2c7f);
+        
+
+        marker_06eb26f3fb194603a6ac357927fc1aa9.bindPopup(popup_e6ca039b11e549fc8055dd1cf9a26ec2)
+        ;
+
+        
+    
+    
+            var marker_7e3003f71cde48ecb48827d2c6cad346 = L.marker(
+                [52.3989439, 10.835501],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_1a24d84d23c24f8ab4824cb26a573491 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_7e3003f71cde48ecb48827d2c6cad346.setIcon(icon_1a24d84d23c24f8ab4824cb26a573491);
+        
+    
+        var popup_669a2a3577cd4760881b1ce9144ec370 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f922e3e3aabb4e499251fc915e602168 = $(`<div id="html_f922e3e3aabb4e499251fc915e602168" style="width: 100.0%; height: 100.0%;">Aldi Nordsteimke, 21, Hehlinger Straße, Nordsteimke, Wolfsburg, Niedersachsen, 38446, Deutschland</div>`)[0];
+            popup_669a2a3577cd4760881b1ce9144ec370.setContent(html_f922e3e3aabb4e499251fc915e602168);
+        
+
+        marker_7e3003f71cde48ecb48827d2c6cad346.bindPopup(popup_669a2a3577cd4760881b1ce9144ec370)
+        ;
+
+        
+    
+    
+            var marker_affa50e056704399b732023653dac988 = L.marker(
+                [51.2572335, 7.1658597],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_c2474cac45f84758bb7530e86a192ac9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_affa50e056704399b732023653dac988.setIcon(icon_c2474cac45f84758bb7530e86a192ac9);
+        
+    
+        var popup_645d25d9c3af424d8e991d495ef0b3ab = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1805e1e95e7041709c633d6b9328b2d4 = $(`<div id="html_1805e1e95e7041709c633d6b9328b2d4" style="width: 100.0%; height: 100.0%;">8, Elberfelder Straße, Gemarkung Barmen, Wuppertal, Nordrhein-Westfalen, 42285, Deutschland</div>`)[0];
+            popup_645d25d9c3af424d8e991d495ef0b3ab.setContent(html_1805e1e95e7041709c633d6b9328b2d4);
+        
+
+        marker_affa50e056704399b732023653dac988.bindPopup(popup_645d25d9c3af424d8e991d495ef0b3ab)
+        ;
+
+        
+    
+    
+            var marker_7fcd64024e9d409da206f558cf4d2da7 = L.marker(
+                [51.2821871, 7.0243376],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_6366012ee4124dd190127f9fea88abf2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_7fcd64024e9d409da206f558cf4d2da7.setIcon(icon_6366012ee4124dd190127f9fea88abf2);
+        
+    
+        var popup_837b7cd910bc49539a80f4a5cd9f1b5a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8bdf94a3b8c54ac7b8b75dbebd23a596 = $(`<div id="html_8bdf94a3b8c54ac7b8b75dbebd23a596" style="width: 100.0%; height: 100.0%;">Zur Fliethe, Karlshaus, Süd - Erbach, Wülfrath, Kreis Mettmann, Nordrhein-Westfalen, 42489, Deutschland</div>`)[0];
+            popup_837b7cd910bc49539a80f4a5cd9f1b5a.setContent(html_8bdf94a3b8c54ac7b8b75dbebd23a596);
+        
+
+        marker_7fcd64024e9d409da206f558cf4d2da7.bindPopup(popup_837b7cd910bc49539a80f4a5cd9f1b5a)
+        ;
+
+        
+    
+    
+            var marker_c18e3fc8efe044dca83285a820b1833a = L.marker(
+                [49.8120983, 9.9764967],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_916e7435072544038f9a12b1ba509fdb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_c18e3fc8efe044dca83285a820b1833a.setIcon(icon_916e7435072544038f9a12b1ba509fdb);
+        
+    
+        var popup_7ff557d7f3ac4f7db89b030ebb77a4f2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ed39e008f6c74e1aa4c24123da8c3325 = $(`<div id="html_ed39e008f6c74e1aa4c24123da8c3325" style="width: 100.0%; height: 100.0%;">7, Industriestraße, Lengfeld, Würzburg, Bayern, 97076, Deutschland</div>`)[0];
+            popup_7ff557d7f3ac4f7db89b030ebb77a4f2.setContent(html_ed39e008f6c74e1aa4c24123da8c3325);
+        
+
+        marker_c18e3fc8efe044dca83285a820b1833a.bindPopup(popup_7ff557d7f3ac4f7db89b030ebb77a4f2)
+        ;
+
+        
+    
+    
+            var marker_dfcd0cd37ff34cebad7d19c2ca958afd = L.marker(
+                [49.79937755, 9.952090315078488],
+                {}
+            ).addTo(map_b114734a847945c9869f6b0ce8c6a8e7);
+        
+    
+            var icon_b64a58a338244bcfa1542ea6cc681b09 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-shopping-cart", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_dfcd0cd37ff34cebad7d19c2ca958afd.setIcon(icon_b64a58a338244bcfa1542ea6cc681b09);
+        
+    
+        var popup_180115d738e24314bd2b45e184d10cbb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2deac0ce40924e98bf0e3a8511853afc = $(`<div id="html_2deac0ce40924e98bf0e3a8511853afc" style="width: 100.0%; height: 100.0%;">Real, 12, Nürnberger Straße, Grombühl, Würzburg, Bayern, 97076, Deutschland</div>`)[0];
+            popup_180115d738e24314bd2b45e184d10cbb.setContent(html_2deac0ce40924e98bf0e3a8511853afc);
+        
+
+        marker_dfcd0cd37ff34cebad7d19c2ca958afd.bindPopup(popup_180115d738e24314bd2b45e184d10cbb)
+        ;
+
+        
+    
+</script>
